@@ -267,17 +267,21 @@ body {
 }
 .works,
 .steps {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 45px 30px;
   padding: 50px 0;
 }
 .works {
-  grid-template-areas: "plan1 plan2 plan3" "plan4 plan5 plan6";
+          grid-template-areas: "plan1 plan2 plan3" "plan4 plan5 plan6";
+  -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 .steps {
-  grid-template-areas: "step1 step2 step3" "step4 step5 step6" "step7 step8 step9";
+          grid-template-areas: "step1 step2 step3" "step4 step5 step6" "step7 step8 step9";
+  -ms-grid-rows: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .work {
@@ -288,21 +292,33 @@ body {
   width: 100%;
 }
 .work1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: plan1;
 }
 .work2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: plan2;
 }
 .work3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: plan3;
 }
 .work4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: plan4;
 }
 .work5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: plan5;
 }
 .work6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: plan6;
 }
 .work__info {
@@ -379,30 +395,48 @@ body {
 }
 
 .step1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: step1;
 }
 .step2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: step2;
 }
 .step3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: step3;
 }
 .step4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: step4;
 }
 .step5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: step5;
 }
 .step6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: step6;
 }
 .step7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: step7;
 }
 .step8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: step8;
 }
 .step9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: step9;
 }
 .step img {
@@ -909,6 +943,30 @@ body {
 }
 .feedback textarea {
   resize: none;
+}
+.feedback input::-webkit-input-placeholder, .feedback textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  color: #d0d0d0;
+}
+.feedback input::-moz-placeholder, .feedback textarea::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  color: #d0d0d0;
+}
+.feedback input:-ms-input-placeholder, .feedback textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  color: #d0d0d0;
+}
+.feedback input::-ms-input-placeholder, .feedback textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  color: #d0d0d0;
 }
 .feedback input::placeholder,
 .feedback textarea::placeholder {
