@@ -10,6 +10,9 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.mobile-header{
+  display: none;
+}
 .header {
   padding: 20px 15px;
   display: flex;
