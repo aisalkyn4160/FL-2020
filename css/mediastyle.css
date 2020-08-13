@@ -607,13 +607,13 @@
 }
 #step-slider{
   display: block;
-  padding-bottom: 40px;
+  padding-bottom: 40px; 
 }
 .step-inner{
-  display: flex;
+ /* display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  position: relative;
+  position: relative;*/
 }
 .step{
   margin: 0 auto;
@@ -655,7 +655,7 @@
   background: #fff;
   border-radius: 50%;
 }
-.step-inner > .step:active .step__text {
+.step-inner .step:active .step__text {
   top:0;
   cursor: pointer;
 }
@@ -935,6 +935,7 @@
 .equipment{
   width: 243px;
   padding: 0px 20px 20px;
+  margin: 0 auto;
 }
 .equipment-info i{
   padding: 15px 18px;
@@ -996,7 +997,6 @@
   position: absolute;
   top: 14px;
   left: -50px;
-  z-index: 10;
 }
 .answer{
   padding-right: 10px;
@@ -1188,7 +1188,8 @@
   display: none;
 }
 .footer .header__button{
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  padding: 8px 25px;
 }
 /*Конец 16 блока*/
 }
