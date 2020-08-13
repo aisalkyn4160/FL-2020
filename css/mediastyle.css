@@ -121,7 +121,7 @@
    width: 100%;
    height: 50px;
    z-index: 3;
-   position: relative;
+   /*position: relative;*/
  }
  #nav label {
    transition: opacity 0.2s ease-out;
@@ -183,6 +183,9 @@
 
 
 @media (max-width: 660px) {
+  .header{
+    padding: 0 0 10px;
+  }
   .header__title{
     padding-right: 0;
   }
@@ -192,8 +195,11 @@
     font-weight: bold;
     line-height: 19px;
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #acacac;
+  }
+  .header__contact{
+    margin-top: 10px;
   }
   .header__title h1,
   .header__contact p,
@@ -227,7 +233,7 @@
   .header__button {
     width: 90%;
     order: 2;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
   }
   /*Конец 1 блока*/
@@ -235,6 +241,7 @@
     background-color: transparent;
     background-size: 1120px;
     background-repeat: no-repeat;
+    padding: 0;
   }
   .price-block__wrapper {
     flex-wrap: wrap;
@@ -252,10 +259,16 @@
     line-height: 25px;
     text-transform: uppercase;
     color: #ff3939;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .price-block__text b {
     color: #fff;
+  }
+  .price-block__list li{
+    padding-bottom: 17px;
+  }
+  .price-block__list li:before{
+    top: 0;
   }
   .price-block__form {
     display: none;
@@ -272,6 +285,7 @@
     font-size: 16px;
     line-height: 19px;
     padding: 18px 7%;
+    margin-bottom: 0;
   }
   .price-block__button:hover {
     background: linear-gradient(180deg, #8dff6b 0%, #7eda5e 100%);
@@ -320,6 +334,7 @@
   /*Конец 3 блока*/
   .work {
     width: 100%;
+    margin-bottom: 20px;
   }
   /*Конец 4 блока*/
   .consultation__list {
@@ -337,6 +352,9 @@
   }
   .caption{
     font-size: 18px;
+  }
+  .calling b{
+    display: block;
   }
   /*Конец 5 блока*/
   .steps-block{
@@ -748,6 +766,9 @@
   transform: translateY(-50%) rotate(-90deg);
 }  
 /*Конец 10 блока*/
+.why .yellow-line{
+  margin-bottom: 0;
+}
 .why__reasons{
   flex-direction: column;
 }
@@ -787,6 +808,10 @@
   width: 100%;
   padding-right: 0;
   margin-bottom: 40px;
+  text-align: center;
+}
+.map__text{
+  width: 100%;
 }
 .feedback textarea{
   order: -1;
