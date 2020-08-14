@@ -655,7 +655,7 @@
   background: #fff;
   border-radius: 50%;
 }
-.step-inner:active .step__text {
+.step-inner .step__text:active {
   top:0;
   cursor: pointer;
 }
