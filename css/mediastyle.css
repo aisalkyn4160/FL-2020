@@ -655,10 +655,11 @@
   background: #fff;
   border-radius: 50%;
 }
-.step-inner .step:active .step__text {
+.step-inner:active .step__text {
   top:0;
   cursor: pointer;
 }
+
 /*Конец 6 блока*/
 .difference {
   padding: 30px 3px;
