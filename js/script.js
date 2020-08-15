@@ -4,33 +4,27 @@ $(document).ready(function(){
 		dots:true,
 		infinite:false,
 	});
-})
 
-$(document).ready(function(){
 	$('.diff-inner').slick({
 		arrows:false,
 		dots:true,
 		infinite:false,
 	});
-})
-
-$(document).ready(function(){
 	$('.eq-inner').slick({
 		arrows:false,
 		dots:true,
 		infinite:false,
 	});
-})
-
-$(document).ready(function(){
+	$('.examples__wrapper').slick({
+		arrows:true,
+		dots:false,
+		infinite:false, 
+	});
 	$('.rew-inner').slick({
 		arrows:false,
 		dots:true,
 		infinite:false,
 	});
-})
-
-$(document).ready(function(){
 	$('.reviews__slider').slick({
 		arrows:true,
 		dots:true,
@@ -38,3 +32,5 @@ $(document).ready(function(){
 		slidesToShow:3, 
 	});
 })
+
+

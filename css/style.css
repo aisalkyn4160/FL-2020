@@ -768,96 +768,11 @@ body {
 .examples__wrapper {
   margin: 30px 70px 0;
   position: relative;
-  min-height: 500px;
-}
-#bul{
-  margin-right: -30px;
-}
-#bul label {
-  cursor: pointer;
-  float: left;
-  margin-right: 10px;
-  display: block;
-  padding: 5px 10px;
-  background: #4c5768;
-  border-radius: 20px;
-  font-weight: normal;
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
-}
-.examples__wrapper input {
-  display: none;
-}
-#tab-1:checked ~ #bul label:nth-child(1),
-#tab-2:checked ~ #bul label:nth-child(2),
-#tab-3:checked ~ #bul label:nth-child(3),
-#tab-4:checked ~ #bul label:nth-child(4),
-#tab-5:checked ~ #bul label:nth-child(5),
-#tab-6:checked ~ #bul label:nth-child(6),
-#tab-7:checked ~ #bul label:nth-child(7) {
-  background: #ffcc39;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#nav{
-  display: none;
-}
-#nav2 {
- margin: -35px 0 0 6px;
- width: 121px;
- height: 50px;
- z-index: 3;
- position: absolute;
- bottom: -50px;
- left: 40%;
-}
-#nav2 label {
- transition: opacity 0.2s ease-out;
- display: none;
- width: 50px;
- height: 50px;
- opacity: .4;
-}
-#nav2 label:hover {
- opacity: 1;
-}
-#tab-1:checked ~ #nav2 label:nth-child(7),
-#tab-2:checked ~ #nav2 label:nth-child(1),
-#tab-3:checked ~ #nav2 label:nth-child(2),
-#tab-4:checked ~ #nav2 label:nth-child(3),
-#tab-5:checked ~ #nav2 label:nth-child(4),
-#tab-6:checked ~ #nav2 label:nth-child(5),
-#tab-7:checked ~ #nav2 label:nth-child(6) {
- background: url("../img/prev.png") no-repeat;
- float:left;
- margin: 0 10px 0 0;
- display: block;
-}
-#tab-1:checked ~ #nav2 label:nth-child(2),
-#tab-2:checked ~ #nav2 label:nth-child(3),
-#tab-3:checked ~ #nav2 label:nth-child(4),
-#tab-4:checked ~ #nav2 label:nth-child(5),
-#tab-5:checked ~ #nav2 label:nth-child(6),
-#tab-6:checked ~ #nav2 label:nth-child(7),
-#tab-7:checked ~ #nav2 label:nth-child(1){
- background: url("../img/next.png") no-repeat;
- float:right;
- margin: 0 0 0 10px;
- display: block;
+ /* min-height: 500px;*/
 }
 .examples__content {
-  clear: both;
-  position: relative;
-}
-.example {
-  width: 100%;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  display: none;
-}
-.content {
   display: flex;
+  flex-wrap: nowrap;
 }
 .example-img {
   width: 70%
@@ -902,14 +817,24 @@ body {
 .example-list li:nth-child(6):before {
   background-position: -399px -10px;
 }
-.examples__wrapper > input[id="tab-1"]:checked ~ .examples__content .tab-1,
-.examples__wrapper > input[id="tab-2"]:checked ~ .examples__content .tab-2,
-.examples__wrapper > input[id="tab-3"]:checked ~ .examples__content .tab-3,
-.examples__wrapper > input[id="tab-4"]:checked ~ .examples__content .tab-4,
-.examples__wrapper > input[id="tab-5"]:checked ~ .examples__content .tab-5,
-.examples__wrapper > input[id="tab-6"]:checked ~ .examples__content .tab-6,
-.examples__wrapper > input[id="tab-7"]:checked ~ .examples__content .tab-7 {
-  display: block;
+.examples__wrapper .slick-arrow{
+  font-size: 0px;
+  position: absolute;
+  bottom: -75px;
+  z-index: 100;
+  width: 25px;
+  height: 45px;
+}
+.examples__wrapper .slick-arrow.slick-prev{
+  left: 45%;
+  background: url("../img/prev.png") 0 0/100% no-repeat;
+}
+.examples__wrapper .slick-arrow.slick-next{
+  right: 45%;
+  background: url("../img/next.png") 0 0/100% no-repeat;
+}
+.examples__wrapper .slick-dots{
+  opacity: 0;
 }
 
 .question-answers {
