@@ -15,15 +15,11 @@ $(document).ready(function(){
 		dots:true,
 		infinite:false,
 	});
-	$('.examples__wrapper').slick({
-		arrows:true,
-		dots:false,
-		infinite:false, 
-	});
 	$('.rew-inner').slick({
 		arrows:false,
 		dots:true,
 		infinite:false,
+		slidesToShow:1,
 	});
 	$('.reviews__slider').slick({
 		arrows:true,
