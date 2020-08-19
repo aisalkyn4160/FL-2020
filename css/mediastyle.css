@@ -219,64 +219,11 @@
     display: block;
   }
   /*Конец 5 блока*/
-  .steps{
-    display: none;
-  }
-  #step-slider{
-    display: block;
-    padding-bottom: 40px; 
-  }
-  .step__text{
-    padding: 20px;
-    text-align: left;
-    width: 351px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .step-inner{
-    text-align: center;
-  }
-  .slick-list {
-    overflow: hidden;
-  }
-  .slick-track{
+   .steps{
     display: flex;
-  }
-  .step-inner .slick-arrow{
-    position: absolute;
-    top: 50%;
-  }
-  .step-inner .slick-arrow.slick-prev{
-    left: 0;
-  }
-  .step-inner .slick-arrow.slick-next{
-    right: 0;
-  }
-  .step-inner .slick-dots{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .step-inner .slick-dots li{
-    list-style: none;
-    margin: 0px 5px;
-  }
-  .step-inner .slick-dots li.slick-active button{
-    background: transparent;
-    border: 1px solid #fff;
-  }
-  .step-inner .slick-dots li button{
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-  }
-  .step-inner .step__text:active {
-    top:0;
-    cursor: pointer;
-  }
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
 
   /*Конец 6 блока*/
   .difference {
@@ -289,7 +236,7 @@
     display: none;
   }
   .diff-inner{
-    padding: 0 45px;
+    padding: 0 20px;
   }
   .diff-inner .slick-dots{
     display: flex;
@@ -314,7 +261,7 @@
   .side-title{
     background-color: #FFCC39;
     padding: 20px;
-    margin: 50px 0 30px 80px;
+    margin: 50px 0 30px 59px;
     height: 100px;
     position: relative;
   }
@@ -323,10 +270,10 @@
     display: inline-block;
     width: 128px;
     height: 191px;
-    background: url("../img/20279 2.png") 0 0 no-repeat;
+    background: url(../img/20279.png) 50% 50%/55% no-repeat;
     position: absolute;
-    top: -46px;
-    left: -71px;
+    top: -66px;
+    left: -98px;
     z-index: 100;
   }
   .side1 h3{
@@ -353,7 +300,7 @@
   .side-title2{
     background-color: #FFCC39;
     padding: 20px;
-    margin: 50px 80px 30px 0px;
+    margin: 50px 67px 30px 0px;
     height: 100px;
     position: relative;
   }
@@ -362,10 +309,10 @@
     display: inline-block;
     width: 128px;
     height: 191px;
-    background: url("../img/20277 2.png") 0 0 no-repeat;
+    background: url(../img/20280.png) 50% 50%/51% no-repeat;
     position: absolute;
-    top: -35px;
-    right: -127px;
+    top: -70px;
+    right: -96px;
     z-index: 100;
   }
   .side-title2 h3{
@@ -384,9 +331,9 @@
   .get-calculation{
     width: 90%;
   }
-  .get-calculation .filling-aplication{
+ /* .get-calculation .filling-aplication{
     display: none;
-  }
+  }*/
   /*Конец 8 блока*/
   .equipments{
     display: none;
@@ -485,11 +432,13 @@
   #bul{
     display: flex;
     width: 66%;
+    height: 33px;
     margin: 0 auto;
     overflow: hidden;
   } 
   #bul label{
-    width: 32%;
+    height: 26px;
+    width: 31%;
     margin-right: 3%;
   }
   #tab-1:checked ~ #bul label:nth-child(1),
@@ -507,7 +456,7 @@
   }
   #nav {
     display: block;
-    margin: -35px 0 0 6px;
+    margin: -42px 0 0 6px;
     width: 100%;
     height: 50px;
     z-index: 3;
@@ -641,7 +590,65 @@
     padding-bottom: 0;
   }
   /*Конец 4 блока*/
-
+     .steps{
+    display: none;
+  }
+  #step-slider{
+    display: block;
+    padding-bottom: 40px; 
+  }
+  .step__text{
+    padding: 20px;
+    text-align: left;
+    width: 351px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .step-inner{
+    text-align: center;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-track{
+    display: flex;
+  }
+  .step-inner .slick-arrow{
+    position: absolute;
+    top: 50%;
+  }
+  .step-inner .slick-arrow.slick-prev{
+    left: 0;
+  }
+  .step-inner .slick-arrow.slick-next{
+    right: 0;
+  }
+  .step-inner .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .step-inner .slick-dots li{
+    list-style: none;
+    margin: 0px 5px;
+  }
+  .step-inner .slick-dots li.slick-active button{
+    background: transparent;
+    border: 1px solid #fff;
+  }
+  .step-inner .slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .step-inner .step__text:active {
+    top:0;
+    cursor: pointer;
+  }
+  /*Конец 6 блока*/
   .how{
   }
   .how__stages{
