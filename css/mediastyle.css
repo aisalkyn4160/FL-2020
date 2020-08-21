@@ -224,7 +224,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
    }
-
+   .step9{
+    width: 100%;
+    height: 300px;
+   }
+   .step9 img{
+    width: 100%;
+   }
+   .step9 .step__text{
+    width: 100%;
+   }
   /*Конец 6 блока*/
   .difference {
     padding: 30px 3px;
